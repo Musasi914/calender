@@ -1,0 +1,75 @@
+$mainWidth:90vw;
+$rowCharacterNum:30;
+$maxFontSize:20px;
+$maxWidth: 1000px;
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+table{
+    width: 400px;
+    margin: auto;
+    border: 2px solid #ddd;
+}
+thead,tfoot{
+    background: #ddd;
+}
+
+th,td{
+    height: auto;
+    text-align: center;
+    padding: 8px;
+}
+tbody{
+    td{
+        background: white;
+    }
+    tr{
+        td{
+
+            &:first-child{
+                color: red;
+            }
+            &:last-child {
+                color: blue;
+            }
+        }
+    }
+}
+.week{
+    th{
+        &:first-child{
+            color: red;
+        }
+        &:last-child {
+            color: blue;
+        }
+    }
+}
+tfoot{
+    td{
+
+        font-weight: bold;
+    }
+}
+
+td.disabled {
+    opacity: 0.3;
+}
+td.today {
+    font-weight: bold;
+}
+
+.prev,.next,.todaybutton {
+    user-select: none;
+    cursor: pointer;
+}
